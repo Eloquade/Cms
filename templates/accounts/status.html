@@ -1,0 +1,55 @@
+<head>
+{% load static %}
+<link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+<br>
+
+<div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Order</div>
+            <div class="number">{{ total_orders}}</div>
+            <div class="indicator">
+              <span class="iconify" data-icon="bx:bx-up-arrow-alt"></span>
+              <span class="text">Up from yesterday</span>
+            </div>
+          </div>
+          <span class="iconify" data-icon="bx:bx-cart-alt" data-width="50" data-height="50"  style="color: lightskyblue;"></span>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Orders Delivered</div>
+            <div class="number">{{ delivered}}</div>
+            <div class="indicator">
+              <span class="iconify" data-icon="bx:bx-up-arrow-alt"></span>
+              <span class="text">Up from yesterday</span>
+            </div>
+          </div>
+          <span class="iconify" data-icon="bx:bxs-cart" data-width="50" data-height="50" style="color: mediumaquamarine;"></span>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Orders Pending</div>
+            <div class="number">{{pending}}</div>
+            <div class="indicator">
+              <span class="iconify" data-icon="bx:bx-up-arrow-alt"></span>
+              <span class="text">Up from yesterday</span>
+            </div>
+          </div>
+          <span class="iconify" data-icon="ic:baseline-pending-actions" data-width="50" data-height="50" style="color: sandybrown;"></span>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Customer</div>
+            <div class="number">{{ total_customer }}</div>
+            <div class="indicator">
+              <span class="iconify" data-icon="bx:bx-up-arrow-alt"></span>
+              <span class="text">Down From Today</span>
+            </div>
+          </div>
+          <span class="iconify" data-icon="raphael:customer" data-width="50" data-height="50" style="color: #F7D4D7"></span>
+        </div>
+      </div>
+</div>
+<script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
